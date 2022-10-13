@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "graphql.vscode-graphql",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "mikestead.dotenv",
+    "csstools.postcss",
+    "blanu.vscode-styled-jsx"
+  ]
+}

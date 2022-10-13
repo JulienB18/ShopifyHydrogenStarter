@@ -1,0 +1,9 @@
+dist/**/*.css
+src/**/*.tsx
+src/**/*.ts
+node_modules/**/*.html
+node_modules/**/*.php
+node_modules/**/*.js
+node_modules/**/*.ts
+node_modules/**/*.css
+node_modules/**/*.scss

@@ -1,0 +1,57 @@
+{
+    // Configuration for JavaScript files
+    "extends": [
+        "airbnb-base",
+        "plugin:prettier/recommended",
+        "plugin:hydrogen/recommended",
+        "plugin:hydrogen/typescript"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true
+            }
+        ]
+    },
+    "parserOptions": {
+        "project": ["tsconfig.json"]
+    },
+    "overrides": [
+        // Configuration for TypeScript files
+        {
+            "files": ["**/*.ts", "**/*.tsx", "**/*.js"],
+            "plugins": ["@typescript-eslint", "unused-imports"],
+            "extends": ["airbnb-typescript", "plugin:prettier/recommended"],
+            "parserOptions": {
+                "project": "./tsconfig.json"
+            },
+            "rules": {
+                "node/no-missing-import": "off",
+                "@typescript-eslint/ban-ts-comment": "off",
+                "@typescript-eslint/naming-convention": "off",
+                "no-console": "off",
+                "prettier/prettier": [
+                    "error",
+                    {
+                        "singleQuote": true,
+                        "endOfLine": "auto",
+                        "printWidth": 120,
+                        "tabWidth": 4,
+                        "bracketSpacing": true
+                    }
+                ],
+                "react/destructuring-assignment": "off",
+                "jsx-a11y/anchor-is-valid": "off",
+                "react/require-default-props": "off",
+                "react/jsx-props-no-spreading": "off",
+                "@typescript-eslint/comma-dangle": "off",
+                "import/prefer-default-export": "off",
+                "class-methods-use-this": "off",
+                "@typescript-eslint/no-unused-vars": "off",
+                "unused-imports/no-unused-imports": "error",
+                "unused-imports/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
+            }
+        }
+    ]
+}

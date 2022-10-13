@@ -1,0 +1,21 @@
+{
+    "name": "Shopify Hydrogen",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-16",
+    "settings": {},
+    "extensions": [
+        "graphql.vscode-graphql",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "mikestead.dotenv",
+        "csstools.postcss",
+        "blanu.vscode-styled-jsx"
+    ],
+    "forwardPorts": [3000],
+    "postCreateCommand": "yarn install",
+    "postStartCommand": "yarn dev",
+    "remoteUser": "node",
+    "features": {
+        "git": "latest"
+    }
+}
